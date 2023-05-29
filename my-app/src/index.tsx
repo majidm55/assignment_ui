@@ -1,12 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './';
-import CounterApp from './CounterApp';
-import './index.css';
+import storeConfiguration  from '../src/app/store/index';
+import CounterApp from '../src/app/CounterApp';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
+const store = storeConfiguration()
 
 root.render(
   <React.StrictMode>

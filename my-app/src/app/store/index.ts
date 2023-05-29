@@ -27,8 +27,7 @@ const rootReducer: Reducer<CombinedState<AppState>> = (state, action) => appRedu
 
 const sagaMiddleware = createSagaMiddleware();
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+const storeConfiguration = () => {
   let store;
 
   if (process.env.NODE_ENV !== 'production') {
@@ -59,3 +58,5 @@ export default () => {
 
   return store;
 };
+
+export default storeConfiguration;
