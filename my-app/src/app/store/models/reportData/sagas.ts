@@ -19,6 +19,10 @@ function* get(action: IReportDataGetRequestAction) {
     yield put(reportDataGetSuccessAction(reportData));
   } catch (err) {
     yield put(reportDataGetFailureAction());
+    window.addToast(
+      `Unable to generate the Content Management Report`,
+      { appearance: 'success' },
+    );
   }
 
   yield put(resetReportDataLoadingStateAction({ loadingType: 'get' }));
