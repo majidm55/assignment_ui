@@ -3,7 +3,7 @@ import * as React from 'react';
 import loadingCircleSvg from '../../assets/svgs/LoadingCircle.svg';
 
 export const LoadingCircle: React.FC<ILoadingCircleProps> = ({ color = 'blue', ...props }) => {
-  // const src = color === 'blue' ? loadingCircleSvg : loadingCircleSvgWhite;
+
   return (
     <img
       className={props.className}
