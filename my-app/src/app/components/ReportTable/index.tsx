@@ -118,4 +118,4 @@ export const Table : React.FC<ITableProps> =  ({
       </div>
     </>
   );
-}
+};
