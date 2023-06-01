@@ -25,12 +25,13 @@ You will also see any lint errors in the console.
 
 ## Prerequisites
 
-- npm
+- node v16.13.2
+- npm v8.1.2
 
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/majidm55/assignment_ui.git`
-2. Navigate to the project directory: `cd assignment-ui`
+2. Navigate to the project directory: `cd assignment-ui/my-app`
 3. Install dependencies: `npm install`
 
 ## Usage
